@@ -4,11 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import Usercontext from './context/Usercontext.jsx'
 import { Provider } from 'react-redux'
-import store from './redux/Store.js'
+// import Store from './redux/Store.js'
+import Store from './redux/Store.js'
 
 
 createRoot(document.getElementById('root')).render(
-  <Provider store={store}>
+  <Provider store={Store}>
   <Usercontext>
     <App />
   </Usercontext>
